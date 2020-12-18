@@ -27,7 +27,7 @@ router.get('/plans', (req, res) => {
       }
     }
   ])
-    .then(plans => res.json())
+    .then(plans => res.json(plans))
     .catch(err => console.log(err))
 })
 
